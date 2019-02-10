@@ -3,7 +3,9 @@
 one:
   name: MyString
   email: MyString
+  notes: MyText
 
 two:
   name: MyString
   email: MyString
+  notes: MyText
