@@ -1,0 +1,17 @@
+default: &default
+  adapter: mysql2
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  username: root
+  password: root
+
+development:
+  <<: *default
+  database: worktracker_dev
+test:
+  <<: *default
+  database: worktracker_test
+
+production:
+  <<: *default
+  database: worktracker_prod
